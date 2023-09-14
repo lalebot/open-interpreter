@@ -9,7 +9,7 @@ The code here has duplication. It has imports in weird places. It has been spagh
 
 In my opinion **this is critical** to keep up with the pace of demand for this project.
 
-At the same time, I plan on pushing a significant re-factor of `interpreter.py` and `code_interpreter.py` ~ September 11th.
+At the same time, I plan on pushing a significant re-factor of `interpreter.py` and `code_interpreter.py` ~ September 16th.
 
 After the re-factor, Open Interpreter's source code will be much simpler, and much more fun to dive into.
 
@@ -950,5 +950,4 @@ class Interpreter:
           return
 
   def _print_welcome_message(self):
-    current_version = pkg_resources.get_distribution("open-interpreter").version
-    print(f"\n Hello, Welcome to [bold]● Open Interpreter[/bold]. (v{current_version})\n")
+    print("", Markdown("●"), "", Markdown(f"\nWelcome to **Open Interpreter**.\n"), "")
